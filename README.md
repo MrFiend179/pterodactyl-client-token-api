@@ -103,9 +103,17 @@ generateClientApiKey('user@example.com');
 
 ## Installation
 
-*To be added soon…*
+Installation is as easy as just running 2 commands on your linux terminal with `sudo`.
 
----
+- Backup your already existing `api-application.php`
+    ```sh
+    sudo cp /var/www/pterodactyl/routes/api-application.php /var/www/pterodactyl/routes/api-application.php.bak
+    ```
+
+- Download and replace with the new file from GitHub
+    ```sh
+    sudo wget -O /var/www/pterodactyl/routes/api-application.php https://raw.githubusercontent.com/MrFiend179/ pterodactyl-client-token-api/master/api-application.php
+    ```
 
 ## Security Notice
 
